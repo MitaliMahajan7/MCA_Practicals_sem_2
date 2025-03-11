@@ -1,0 +1,263 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+header {
+    background: linear-gradient(135deg, #ff4b5c, #ff6a00);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-top: 15px;
+}
+p{
+    color: #333;
+    text-align: center;
+}
+nav a {
+    color: white;
+    font-size: 1.1em;
+    margin: 0 20px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffe600;
+}
+
+main {
+    padding: 50px 20px;
+    text-align: center;
+    flex-grow: 1; 
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1d1c1c;
+    text-align: center;
+}
+
+footer {
+    background: linear-gradient(135deg, #519fee, #304c68); 
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+}
+
+footer a {
+    color: #ffe600;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #ff6a00;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4b5c;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    padding: 12px 15px;
+    margin: 10px 0;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #ff6a00;
+    outline: none;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form label {
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.book {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.book:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.book h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.book p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Small Screen Adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+
+    .catalog {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .book {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) 
+{
+    header {
+        padding: 15px 0;
+    }
+
+    nav a {
+        font-size: 0.9em;
+    }
+
+    .catalog {
+        grid-template-columns: 1fr;
+    }
+
+    .book {
+        padding: 10px;
+    }
+}
+
+
+/* Set background image for the body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Apply background image to the container */
+.background-container {
+    background-image: url('"C:/Users/hp/Desktop/A2_26_WT_Practicals/Mitali/backcover.png"');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full height of the viewport */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Align the header, main, and footer */
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for readability */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Navigation Links */
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f1c40f; /* Yellow hover effect */
+}
+
+/* Main Content */
+main {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    
+    background-color: #ff6a00
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    color: rgb(255, 255, 255);
+}
